@@ -135,12 +135,12 @@ set welcome disable
 *Only moderators & owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about,settings commands
 〰〰〰〰〰〰
 *Only owner can use res,setowner,promote,demote,log commands 
-@shieldTM  👈👈pls join
+@teletamirbot  👈👈pls join
   ]]
 end
 
 return {
-  description = "shield",
+  description = "tamir",
   patterns = {"^[!/%$+=.-*&][Hh]elpen$"},
   run = run 
 }
