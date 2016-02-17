@@ -257,7 +257,7 @@ function create_config( )
     "echo",
     "fohsh"
     },
-    sudo_users = {119650184,156823206,80182995},--Sudo users
+    sudo_users = {119650184},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -266,9 +266,9 @@ function create_config( )
      Hello my Good friends 
      
    〰〰〰〰〰〰〰〰
-   ߔࠀ   founder : @hafez1116hafez
-   ߔࠀ   sudo : @amirho3ein911
-   ߔࠀ   sudo: @RedCross_king
+   ߔࠀ   founder : @amirho3ein911
+   TeleTamir Team
+   〰〰〰〰〰〰〰〰
    〰〰〰〰〰〰〰〰
   ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
    تمامی درخواست ها و همه ی انتقادات و حرفاتونو با دستور زیر بفرستین به ما
@@ -408,8 +408,8 @@ return گرفتن ایدی گروه
 ارسال سریع لینک در پیوی شما
 !kickinactive
 حذف خودکار کسانی که در گروه فعالیت ندارند
-!invamir | !invhafez | !invmostafa
-در صورت مشکل هر ادمینی انلاین بود بزنین بات ادد می کنه
+!invamir | TeleTamir team
+در صورت مشکل با دستور بالا ادمین را اد کنید تا مشکلتان برطرف شود :-)
 --------------------------------
 برای اجرای دستور میتوانید از ! و / استفاده کنید
 دستورات بدون علامت هم کار میکنند
