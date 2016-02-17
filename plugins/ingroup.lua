@@ -240,7 +240,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "Group settings:\nLock group name✏ : "..settings.lock_name.."\nLockmember photo🌁 : "..settings.lock_photo.."\nLock group member👤 : "..settings.lock_member.."\nLock group leave📤 : "..leave_ban.."\nlock arabic🇸🇦 : "..settings.lock_arabic.."\nlock english🔠 : "..settings.lock_english.."\nlock chat📖 : "..settings.lock_chat.."\nlock join📥 : "..settings.lock_join.."\nlock tag󾠬 : "..settings.antitag.."\nlock link🃏 : "..settings.lock_ads.."\nlock fosh😷 : "..settings.antifosh.."\nflood sensitivity 📰: "..NUM_MSG_MAX.."\nBot protection👽 : "..bots_protection.."\nbot version : v5.5\n\n@shieldTM team"
+  local text = "Group settings:\nLock group name✏ : "..settings.lock_name.."\nLockmember photo🌁 : "..settings.lock_photo.."\nLock group member👤 : "..settings.lock_member.."\nLock group leave📤 : "..leave_ban.."\nlock arabic🇸🇦 : "..settings.lock_arabic.."\nlock english🔠 : "..settings.lock_english.."\nlock chat📖 : "..settings.lock_chat.."\nlock join📥 : "..settings.lock_join.."\nlock tag󾠬 : "..settings.antitag.."\nlock link🃏 : "..settings.lock_ads.."\nlock fosh😷 : "..settings.antifosh.."\nflood sensitivity 📰: "..NUM_MSG_MAX.."\nBot protection👽 : "..bots_protection.."\nbot version : v5.5\n\n@teletamirbot team"
   return text
 end
 
