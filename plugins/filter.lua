@@ -42,7 +42,7 @@ function RemoveWord( data, index, msg )
 
   if ( TTable ) then
     print("Grate the table is here i will remove this word from it..")
-    send_large_msg ( get_receiver(msg) , "کلمه [" .. word .. " ] از لیست کلمات ممنوعه حذف گردید" );
+    send_large_msg ( get_receiver(msg) , "کلمه [" .. tostring(TTable[index]) .. " ] از لیست کلمات ممنوعه حذف گردید" );
     table.remove(TTable, index)
     save_data(_config.moderation.data, data);
   else
