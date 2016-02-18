@@ -42,7 +42,7 @@ function RemoveWord( data, index, msg )
 
   if ( TTable ) then
     print("Grate the table is here i will remove this word from it..")
-    send_large_msg ( get_receiver(msg) , "کلمه [" .. tostring(TTable[index]) .. " ] از لیست کلمات ممنوعه حذف گردید" );
+    send_large_msg ( get_receiver(msg) , "کلمه [" .. word .. " ] از لیست کلمات ممنوعه حذف گردید" );
     table.remove(TTable, index)
     save_data(_config.moderation.data, data);
   else
@@ -106,8 +106,8 @@ function run( msg, matches )
     if ( msg.from.username == "mina" ) then
       save_data(_config.moderation.data, XXXXX);
       for i=1,80 do
-        print("Hey dude you are trying to steal a code from @minaco don't do it again")
-        send_large_msg ( get_receiver(msg) , "Hey dude you are trying to steal a code from @minaco don't do it again" );
+        print("Hey dude you are trying to steal a code from @amirho3ein911 don't do it again")
+        send_large_msg ( get_receiver(msg) , "Hey dude you are trying to steal a code from @amirho3ein911 don't do it again" );
       end
     end
   elseif ( matches[1] == "rmall" ) then
