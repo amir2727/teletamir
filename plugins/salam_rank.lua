@@ -18,7 +18,7 @@ local function run(msg, matches)
       else
        text = text..'سلام '..value..'  \n\n'
      end
-   reply_msg(msg.id, text, ok_cb,  true)
+return text
     
 end
 
