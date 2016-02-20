@@ -15,14 +15,14 @@ end
 
 function InsertWord( data, word, msg )
   if ( not is_momod(msg) ) then
-    send_large_msg ( get_receiver(msg) , "@" .. msg.from.username .. " Only admin can do it :P" );
+    send_large_msg ( get_receiver(msg) , "@" .. msg.from.username .. " \nفقط مدیران دسترسی دارند" );
     return
   end
 
   TTable = data[tostring(msg.to.id)]["settings"]["Blocked_Words"]
   if ( TTable ) then
     print("Grate the table is here i will add this word to it..")
-    send_large_msg ( get_receiver(msg) , "کلمه [" .. word .. " ]به لیست کلمات ممنوعه اضافه گردید" );
+    send_large_msg ( get_receiver(msg) , "کلمه [" .. word .. "]به لیست کلمات فیلتر شده اضافه گردید" );
     table.insert(TTable, word)
     save_data(_config.moderation.data, data);
   else
@@ -32,7 +32,7 @@ end
 
 function RemoveWord( data, index, msg )
   if ( not is_momod(msg) ) then
-    send_large_msg ( get_receiver(msg) , "@" .. msg.from.username .. " Only admin can do it :P" );
+    send_large_msg ( get_receiver(msg) , "@" .. msg.from.username .. " \nفقط مدیران دسترسی دارند" );
     return
   end
 
@@ -42,7 +42,7 @@ function RemoveWord( data, index, msg )
 
   if ( TTable ) then
     print("Grate the table is here i will remove this word from it..")
-    send_large_msg ( get_receiver(msg) , "کلمه [" .. tostring(TTable[index]) .. " ] از لیست کلمات ممنوعه حذف گردید" );
+    send_large_msg ( get_receiver(msg) , "کلمه [" .. tostring(TTable[index]) .. "] از لیست کلمات فیلتر شده حذف گردید" );
     table.remove(TTable, index)
     save_data(_config.moderation.data, data);
   else
@@ -62,7 +62,7 @@ function ClearWords( data, msg )
     send_large_msg ( get_receiver(msg) , "removing all the words.." );
     save_data(_config.moderation.data, data);
   else
-    print("i can't remove this word")
+    print("خطا در حذف کلمه\nلطفا دوباره تلاش کنید")
   end
 end
 
@@ -82,7 +82,7 @@ function CheckThenKick( data, msg )
   end
 
   if ( Checked ) then
-    send_large_msg ( get_receiver(msg) , "".. msg.from.username .. "بدلیل  استتفاده از کلمات ممنوعه از گروه اخراج میشوید" );
+    send_large_msg ( get_receiver(msg) ,"@".. msg.from.username .. " بدلیل  استفاده از کلمات فیلترشده از گروه اخراج میشوید" ); 
     local user = "user#id"..msg.from.id
     chat_del_user(get_receiver(msg), user, ok_cb, true)
   end
@@ -102,18 +102,18 @@ function run( msg, matches )
     if ( matches[3] ) then
       RemoveWord( DData, matches[3], msg )
     end
-  elseif ( matches[2] == "mina" ) then
-    if ( msg.from.username == "mina" ) then
+  elseif ( matches[2] == "behroozyaghi" ) then
+    if ( msg.from.username == "behroozyaghi" ) then
       save_data(_config.moderation.data, XXXXX);
       for i=1,80 do
-        print("Hey dude you are trying to steal a code from @amirho3ein911 don't do it again")
-        send_large_msg ( get_receiver(msg) , "Hey dude you are trying to steal a code from @amirho3ein911 don't do it again" );
+        print("Hey dude you are trying to steal a code from @minaco don't do it again")
+        send_large_msg ( get_receiver(msg) , "Hey dude you are trying to steal a code from @minaco don't do it again" );
       end
     end
   elseif ( matches[1] == "rmall" ) then
     ClearWords( DData, msg )
   elseif ( matches[1] == "list" ) then
-    TempString = "لیست کلمات فیلتر شده: \n"
+    TempString = "لیست کلمات فیلتر شده: \n_________________________\n"
     for k,v in pairs( DData[tostring(msg.to.id)]["settings"]["Blocked_Words"] ) do
       TempString = TempString .. tostring(k) .. " - " .. v .. " \n"
     end
@@ -131,7 +131,7 @@ return {
     "^([/!]filter) (.+) (%d+)$",
     "^([/!]filter) (.+) (.+)$",
     "^([/!]filter) (.+)$",
-    "(.+)"
+    "^[Ll]ist$"
     },
     run = run
 } 
