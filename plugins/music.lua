@@ -3,12 +3,12 @@ do
 
   -- Base search URL
 
-  local BASE_URL = 'http://pleer.com/mobile/search?q='
+  local BASE_URL = 'http://nex1music.com/mobile/search?q='
 
 
   -- Base download URL
 
-  local BASE_DL_URL = 'http://pleer.com/mobile/files_mobile/'
+  local BASE_DL_URL = 'http://nex1music.com/mobile/files_mobile/'
 
 
   local htmlparser = require 'htmlparser'
@@ -58,7 +58,7 @@ do
         local trackId = track.id
 
 
-	-- Remove that starting 't' in the id of element
+ -- Remove that starting 't' in the id of element
 
         trackId = trackId:sub(2)
 
@@ -101,17 +101,17 @@ do
 
         specs = specs:split(',')
 
-	-- Size
+ -- Size
 
         local size = specs[1]:trim()
 
-	-- Bitrate
+ -- Bitrate
 
         local bitrate = specs[2]:trim()
 
 
 
-	-- Generate an awesome, well formated output
+ -- Generate an awesome, well formated output
 
         output = output .. i .. '. ' .. artist ..'\n'
 
