@@ -416,8 +416,7 @@ return گرفتن ایدی گروه
 -------------------------
 برای اجرای دستور میتوانید از ! و / استفاده کنید
 دستورات بدون علامت هم کار میکنند
-*بیشتر دستورات مخصوص مودها و اونرها میباشد kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-*Only owner can use res,setowner,promote,demote and log commands
+*بیشتر دستورات مخصوص مودها و اونرها میباشد 
 ]]
   }
   serialize_to_file(config, './data/config.lua')
