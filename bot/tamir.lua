@@ -249,7 +249,7 @@ function create_config( )
     "me",
     "info",
     "lock_english",
-    "linkpv",
+    "dog",
     "antibadword",
     "calc",
     "chat",
