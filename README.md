@@ -1,4 +1,4 @@
-# [Shield](https://telegram.me/anti_sheild) 
+# [TeleTamir](https://telegram.me/teletamir) 
 **An Edited Bot Based On [Tele seed](http://github.com/SeedTeam/teleseed) Plugins and Added new and Usefull Plugins to it 
 # Features
 
@@ -456,7 +456,7 @@ _Sudo users and admins can also use this commands in all groups_
 >> This command Writes your Test in picture and sends it to you
 
 
-New plugins BY : [@shieldTM](http://telegram.me/shieldTM)
+New plugins BY : [@teletamirTM](http://telegram.me/teletamirTM)
 
 # Installation 
 
@@ -522,25 +522,13 @@ Create a realm using !createrealm command
 # Support and development
 
 Do not contact **us** In private for support.
-Join our bot development group by sending `/join 76950056` to [@Creed_antispam](https://telegram.me/creedantispam_channel)
+Join our bot development group by sending `/join 76950(https://telegram.me/creedantispam_channel)
 
 _If you are using /join service for first time you have to send it 11 times ( Bot is spam reported )_
 
 # Special thanks to
 
-For Creating The [teleshield](http://github.com/hafez16/teleshield)
 
-[@hafez1116hafez](https://telegram.me/hafez1116hafez)
 
 [@amirho3ein911](https://telegram.me/amirho3ein911)
 
-[@RedCross_king](https://telegram.me/RedCross_king)
-
-[@mortezagh1185](https://telegram.me/mortezagh1185)
-
-[@Ww_pouria_redteam_wW](https://telegram.me/Ww_pouria_redteam_wW)
-
-For graphic designs
-
-[@hafez1116hafez](https://telegram.me/hafez1116hafez)
-Our Telegram cahnnels > Persian : [@shieldTM](https://telegram.me/shieldTM)
