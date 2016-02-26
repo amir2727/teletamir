@@ -1,5 +1,5 @@
 local lock = 1
-local txt = "\n\nSticker Maker By @amirho3ein912" -- Lotfan Ino Pak Nakonid Bara In Plugin Zahmat Ziadi Keshidam
+local txt = "\n\nSticker Maker By @amirho3ein911" -- Lotfan Ino Pak Nakonid Bara In Plugin Zahmat Ziadi Keshidam
 local function callback(extra, success, result) -- Calback Bara Load Kardn ax
   if success then
     local file = 'sticker/sticker.webp'
